@@ -1,4 +1,4 @@
-import PhoneItem from '@/app/phones/components/PhoneItem'
+import PhoneItem from '../../phones/components/PhoneItem'
 import { Phone } from '@prisma/client'
 import Link from 'next/link';
 

@@ -1,4 +1,4 @@
-import { prisma } from "@/utils/db"
+import { prisma } from "../../utils/db"
 
 export const getPhone = (id: string) => {
 	const response = prisma.phone.findFirst({ where: { id } });

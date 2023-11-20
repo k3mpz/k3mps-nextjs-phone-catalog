@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import NavBar from '@/app/components/NavBar'
-import SideBar from '@/app/components/SideBar'
 import 'tailwindcss/tailwind.css';
 import 'daisyui/dist/full.css';
+import NavBar from './components/NavBar'
+import SideBar from './components/SideBar'
 
 const inter = Inter({ subsets: ['latin'] })
 

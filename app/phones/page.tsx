@@ -1,5 +1,5 @@
-import { getPhones } from '@/app/models/phone'
-import PhoneList from '@/app/phones/components/PhoneList'
+import { getPhones } from '../models/phone'
+import PhoneList from '../phones/components/PhoneList'
 
 export default async function Phones() {
 	const phones = await getPhones();

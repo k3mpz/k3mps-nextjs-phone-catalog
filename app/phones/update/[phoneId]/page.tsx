@@ -1,8 +1,8 @@
-import { updatePhone } from '@/app/phones/actions'
-import { getPhone } from '@/app/models/phone'
 import Link from 'next/link'
-import SubmitButton from '@/app/components/SubmitButton'
+import SubmitButton from '../../../components/SubmitButton'
 import { FaArrowLeft } from "react-icons/fa"
+import { updatePhone } from '../../actions'
+import { getPhone } from '../../../models/phone'
 
 const UpdatePage = async ({ params }: { params: { phoneId: string } }) => {
 	const phone = await getPhone(params.phoneId);

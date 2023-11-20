@@ -1,12 +1,11 @@
-/* eslint-disable @next/next/no-async-client-component */
 'use client'
 
-import { createPhone } from '@/app/phones/actions'
+import { createPhone } from '../../phones/actions'
 import Link from 'next/link'
-import SubmitButton from '@/app/components/SubmitButton'
+import SubmitButton from '../../components/SubmitButton'
 import { FaArrowLeft } from "react-icons/fa"
 
-const CreatePage = async () => {
+const CreatePage = () => {
 	return (
 		<>
 			<form

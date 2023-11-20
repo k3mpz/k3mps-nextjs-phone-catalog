@@ -1,6 +1,6 @@
 'use client'
 
-import { deletePhoneById } from '@/app/phones/actions'
+import { deletePhoneById } from '../../phones/actions'
 import { useTransition } from 'react'
 import { FaSpinner, FaTrash } from 'react-icons/fa'
 

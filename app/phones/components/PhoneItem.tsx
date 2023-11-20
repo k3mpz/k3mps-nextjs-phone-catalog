@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Phone } from "@prisma/client";
-import DeleteButton from '@/app/phones/components/DeleteButton';
+import DeleteButton from '../../phones/components/DeleteButton';
 import { FaBook, FaPencilAlt } from 'react-icons/fa'
 
 const PhoneItem = ({ id, name, manufacturer_name, cpu_name, ram, rom, has_5glte }: Phone) => {
