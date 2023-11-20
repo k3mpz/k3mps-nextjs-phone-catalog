@@ -1,0 +1,18 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Phone {
+  id      String   @id @default(auto()) @map("_id") @db.ObjectId
+  name   String   @unique
+  manufacturer_name    String?
+  cpu_name    String?
+  ram    String?
+  rom    String?
+  has_5glte    String?
+}
