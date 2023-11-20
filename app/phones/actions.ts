@@ -22,7 +22,8 @@ export const createPhone = async (data: FormData) => {
 			has_5glte: has_5glte as string,
 		},
 	});
-	
+
+	revalidatePath("/phones");
 	redirect("/phones");
 }
 
@@ -47,6 +48,7 @@ export const updatePhone = async (data: FormData) => {
 		},
 	});
 	
+	revalidatePath("/phones");
 	redirect("/phones");
 }
 

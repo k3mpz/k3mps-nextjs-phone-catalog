@@ -1,5 +1,7 @@
-export default function Home() {
+import { revalidatePath } from "next/cache";
 
+export default function Home() {
+	revalidatePath("/phones");
 	return (
 
 		<div className="hero min-h-screen bg-base-200">

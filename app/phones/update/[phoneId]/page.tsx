@@ -7,7 +7,6 @@ import { getPhone } from '../../../models/phone'
 const UpdatePage = async ({ params }: { params: { phoneId: string } }) => {
 	const phone = await getPhone(params.phoneId);
 	const { id, name, manufacturer_name, cpu_name, ram, rom, has_5glte } = {...phone};
-	console.log(has_5glte);
 	return (
 			<form
 				action={updatePhone}>
